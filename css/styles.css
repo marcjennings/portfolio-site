@@ -111,8 +111,15 @@ body {
   padding-top: 55px; 
 }
 
+#e-learning  {
+  padding-top: 55px; 
+}
+
+#illustration  {
+  padding-top: 55px; 
+}
+
 #web-dev  {
-  margin-top: -55px;
   padding-top: 55px; 
 }
 
@@ -161,8 +168,15 @@ body {
  /* end Image Gallery */
 
 /* About & Contact */
-#about-contact  {
-  padding-top: 55px; 
+
+#about-contact {
+  /*background: url("../img/other/bridge.jpg");*/
+  background-attachment: fixed;
+  background-size: cover;
+/*  background-blend-mode: multiply;*/
+  background-color: #5eceed;
+  padding-top: 50px;
+  height: 800px;
 }
 
 #about-contact-details {
@@ -240,15 +254,6 @@ a[href^="mailto"]:hover {
   color: white;
   float: center;
   font-size: .8em;
-}
-
-#about-contact {
- /* background: url("../img/run-tint.jpg");*/
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #5eceed;
-  padding-top: 50px;
-  height: 800px;
 }
 /*end About & Contact */
 

@@ -41,41 +41,92 @@ $(document).ready( function(){
   });
   /* end character counter */
 
-/* new work images */
-  for(var i = 0; i < works.length; ++i ) {
-    $("#work").append("\
-      <div class='col-xs-6 col-sm-4 col-md-3'>\
-      <a href='#' class='work-img'>\
-        <img class='img-responsive' src='" + works[i].pic + "'>\
-        <span class='info'><p class='proj-title'> "+ works[i].title + " </p> </span>\
-        <a/>\
-      </div>\
-    ");
-  };
-  /* ends new work images */
+  /* new work images */
+  function addWork(_arr, idTarg) {
+    for (var i = 0; i < _arr.length; ++i) {
+      $("#" + idTarg).append("\
+        <div class='col-xs-6 col-sm-4 col-md-3'>\
+          <a href='#' class='work-img'>\
+            <img class='img-responsive' src='" + _arr[i].pic + "'>\
+            <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
+          <a/>\
+        </div>\
+      ");
+    }
+  }
+  addWork(infogs, 'infogs');
+  addWork(e_learn, 'e_learn');
+  addWork(illus, 'illus');
+  addWork(webdev,'webdev');
+  
+  // for(var i=0; i < infogs.length; ++i ) {
+  //   $("#infogs").append("\
+  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
+  //     <a href='#' class='work-img'>\
+  //       <img class='img-responsive' src='" + infogs[i].pic + "'>\
+  //       <span class='info'><p class='proj-title'> "+ infogs[i].title + " </p> </span>\
+  //       <a/>\
+  //     </div>\
+  //   ");
+  // };
 
-  /* image title hover effect */
+  // for(var i=0; i < e_learn.length; ++i ) {
+  //   $("#e-learn").append("\
+  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
+  //     <a href='#' class='work-img'>\
+  //       <img class='img-responsive' src='" + e_learn[i].pic + "'>\
+  //       <span class='info'><p class='proj-title'> "+ e_learn[i].title + " </p> </span>\
+  //       <a/>\
+  //     </div>\
+  //   ");
+  // };
+
+  //   for(var i=0; i < illus.length; ++i ) {
+  //   $("#illus").append("\
+  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
+  //     <a href='#' class='work-img'>\
+  //       <img class='img-responsive' src='" + illus[i].pic + "'>\
+  //       <span class='info'><p class='proj-title'> "+ illus[i].title + " </p> </span>\
+  //       <a/>\
+  //     </div>\
+  //   ");
+  // };
+
+  // for(var i=0; i < webdev.length; ++i ) {
+  //   $("#webdev").append("\
+  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
+  //     <a href='#' class='work-img'>\
+  //       <img class='img-responsive' src='" + webdev[i].pic + "'>\
+  //       <span class='info'><p class='proj-title'> "+ webdev[i].title + " </p> </span>\
+  //       <a/>\
+  //     </div>\
+  //   ");
+  // };
+  /* ends new work images */
+  /* ----------------------------------------------------------------------------------------------- */
+  /* multi array, prints/appends to each row/#id */
+    // for (var i = 0; i < multiArr.length; ++i) {
+    //   for (var p = 0; p < multiArr[i].length; ++p) {
+    //     $("#infogs, #e-learn, #illus, #webdev").append("\
+    //       <div class='col-xs-6 col-sm-4 col-md-3'>\
+    //         <a href='#' class='work-img'>\
+    //           <img class='img-responsive' src='" + multiArr[i][p].pic + "'>\
+    //           <span class='info'><p class='proj-title'> " + multiArr[i][p].title + " </p> </span>\
+    //         <a/>\
+    //       </div>\
+    //     ");
+    //   };
+    // }
+  /* ends multi array, prints/appends to each row/#id */
+    /* ----------------------------------------------------------------------------------------------- */
+
+/* image title hover effect */
   $(".work-img").mouseenter(function(){
     $(".info", this).show();
   }).mouseleave(function(){
     $(".info", this).hide();
   });
   /* end image title hover effect */
-
-    // /* old work images */
-  // for(var i=0; i<myWork.length; ++i) {
-  //   $( "#" + i ).css("background-image", "url(" + myWork[i].pic + ")" );
-  // };
-  // /* end images */
-
-  // /* old image title hover effect */
-  // $(".work").mouseenter( function() {
-  //   console.log(works[this.id].title);
-  //   $(this).html("<p class='info'><span class='proj-title'>Title:</span> " + works[this.id].title + "</p>" );
-  // }).mouseleave( function() {
-  //   $("p.info").html("");
-  // });
-  // /* end image title hover effect */
 
   /* table */
   var rows = $(".my-row");
