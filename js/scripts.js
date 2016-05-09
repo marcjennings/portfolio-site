@@ -58,6 +58,7 @@ $(document).ready( function(){
   addWork(e_learn, 'e_learn');
   addWork(illus, 'illus');
   addWork(webdev,'webdev');
+  /* end new work images */
   
 
 /* image title hover effect */
