@@ -59,66 +59,6 @@ $(document).ready( function(){
   addWork(illus, 'illus');
   addWork(webdev,'webdev');
   
-  // for(var i=0; i < infogs.length; ++i ) {
-  //   $("#infogs").append("\
-  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
-  //     <a href='#' class='work-img'>\
-  //       <img class='img-responsive' src='" + infogs[i].pic + "'>\
-  //       <span class='info'><p class='proj-title'> "+ infogs[i].title + " </p> </span>\
-  //       <a/>\
-  //     </div>\
-  //   ");
-  // };
-
-  // for(var i=0; i < e_learn.length; ++i ) {
-  //   $("#e-learn").append("\
-  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
-  //     <a href='#' class='work-img'>\
-  //       <img class='img-responsive' src='" + e_learn[i].pic + "'>\
-  //       <span class='info'><p class='proj-title'> "+ e_learn[i].title + " </p> </span>\
-  //       <a/>\
-  //     </div>\
-  //   ");
-  // };
-
-  //   for(var i=0; i < illus.length; ++i ) {
-  //   $("#illus").append("\
-  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
-  //     <a href='#' class='work-img'>\
-  //       <img class='img-responsive' src='" + illus[i].pic + "'>\
-  //       <span class='info'><p class='proj-title'> "+ illus[i].title + " </p> </span>\
-  //       <a/>\
-  //     </div>\
-  //   ");
-  // };
-
-  // for(var i=0; i < webdev.length; ++i ) {
-  //   $("#webdev").append("\
-  //     <div class='col-xs-6 col-sm-4 col-md-3'>\
-  //     <a href='#' class='work-img'>\
-  //       <img class='img-responsive' src='" + webdev[i].pic + "'>\
-  //       <span class='info'><p class='proj-title'> "+ webdev[i].title + " </p> </span>\
-  //       <a/>\
-  //     </div>\
-  //   ");
-  // };
-  /* ends new work images */
-  /* ----------------------------------------------------------------------------------------------- */
-  /* multi array, prints/appends to each row/#id */
-    // for (var i = 0; i < multiArr.length; ++i) {
-    //   for (var p = 0; p < multiArr[i].length; ++p) {
-    //     $("#infogs, #e-learn, #illus, #webdev").append("\
-    //       <div class='col-xs-6 col-sm-4 col-md-3'>\
-    //         <a href='#' class='work-img'>\
-    //           <img class='img-responsive' src='" + multiArr[i][p].pic + "'>\
-    //           <span class='info'><p class='proj-title'> " + multiArr[i][p].title + " </p> </span>\
-    //         <a/>\
-    //       </div>\
-    //     ");
-    //   };
-    // }
-  /* ends multi array, prints/appends to each row/#id */
-    /* ----------------------------------------------------------------------------------------------- */
 
 /* image title hover effect */
   $(".work-img").mouseenter(function(){
@@ -139,29 +79,6 @@ $(document).ready( function(){
     };
   }; 
   /* end table */
-
-  /* map */
-  function initialize(){
-    var mapOptions = {
-      center: new google.maps.LatLng(52.4776239, -1.8988442),
-      zoom: 11
-    };
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-    var marker = new google.maps.Marker({
-      position: map.getCenter(),
-      map: map,
-      title: 'I live near here - Click to zoom'
-    });
-
-    google.maps.event.addListener(marker, 'click', function(){
-      map.setZoom(18);
-      map.setCenter(marker.getPostion());
-    });
-
-  };
-  
-  google.maps.event.addDomListener(window, 'load', initialize);
-  /* end map */
 
   // work section
   console.log(works);

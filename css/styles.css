@@ -170,7 +170,7 @@ body {
 /* About & Contact */
 
 #about-contact {
-  /*background: url("../img/other/bridge.jpg");*/
+  background: url("../img/other/about-bkg-01.svg");
   background-attachment: fixed;
   background-size: cover;
 /*  background-blend-mode: multiply;*/
@@ -439,7 +439,7 @@ table {
 
 /* footer */
 .footer {
-  height: 40px;
+  height: 55px;
   background-color: #1cbbe6;
   position: relative;
   bottom: 0;
@@ -448,7 +448,7 @@ table {
 .footer-copyright {
   font-size: .8em;
   color: white;
-  padding-top: 25px;
+  padding-top: 20px;
   width: 50%;
   margin: 0px;
   display: inline-block;
