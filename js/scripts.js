@@ -46,7 +46,7 @@ $(document).ready( function(){
     for (var i = 0; i < _arr.length; ++i) {
       $("#" + idTarg).append("\
         <div class='col-xs-6 col-sm-4 col-md-3'>\
-          <a href='#' class='work-img'>\
+          <a href='" + _arr[i].href + "' class='work-img swipebox' title='" + _arr[i].title + "'>\
             <img class='img-responsive' src='" + _arr[i].pic + "'>\
             <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
           <a/>\
@@ -68,6 +68,7 @@ $(document).ready( function(){
     $(".info", this).hide();
   });
   /* end image title hover effect */
+
 
   /* table */
   var rows = $(".my-row");

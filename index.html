@@ -32,9 +32,9 @@
 
   <!-- Bootstrap core CSS -->
   <link href="http://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet">
+  
   <link rel="stylesheet" href="swipebox/src/css/swipebox.css">
-    
+  <link href="css/styles.css" rel="stylesheet">
     
   <!-- Custom styles for this template go here -->
     
@@ -81,58 +81,68 @@
 
     <!-- Infographics Gallery -->
     <div class="container-fluid" id="infographics">
-      <div class="row-no-gutter" id="infogs" class="swipebox">
+      <div class="row-no-gutter" id="infogs">
+        
       </div> <!-- end row work -->
     </div> <!-- end infographics container -->
             
     <!-- E-learning Gallery -->
     <div class="container-fluid" id="e-learning">
-      <div class"row-no-gutter" id="e_learn" class="swipebox">
+      <div class"row-no-gutter" id="e_learn">
+        
       </div> <!-- end e_learn -->
     </div><!-- end e-learning container -->
 
     <!-- Illustration Gallery -->
     <div class="container-fluid" id="illustration">
-      <div class"row-no-gutter" id="illus" class="swipebox">
+      <div class"row-no-gutter" id="illus">
+        
       </div> <!-- end illus -->
     </div> <!-- end Illustration container -->
 
     <!-- web-dev Gallery -->
     <div class="container-fluid" id="web-dev">
-      <div class"row-no-gutter" id="webdev" class="swipebox">
+      <div class"row-no-gutter" id="webdev">
+        
       </div> <!-- end webdev -->
     </div><!-- end web-dev container -->
 
 
     <!-- About & Contact -->
-    <div class="container" id="about-contact">
+    <div class="container-fluid" id="about-contact">
       <div class="row-no-gutter" id="about-contact-details">
-      <div class="col-xs-4 col-md-2" id="code">
-        <img src="img/other/code_icon.svg" class="img-responsive" alt="Responsive image">
-        <h1>Front &amp; Back End</h1>
-            <div class="main-text">
+      <div class="col-md-2" id="code">
+       <!--  <div class="col-xs-10" id="code-img"> -->
+          <img src="img/other/code_icon.svg" class="img-responsive center-block" alt="Responsive image">
+       <!--  </div> -->
+          <div class="main-text">
+          <h1>Front &amp; Back End</h1>
             <p>Front end skills: HTML5, CSS, SASS, Bootstrap and Responsive Web Design and Email Design.<br>I also have knowledge of Github Version Control, Heroku app deployment and add-ons and Payment Processing.<p>
-            </div>
+        </div>
       </div>
     
-      <div class="col-xs-4 col-md-2" id="ruby">
-        <img src="img/other/ruby_icon.svg" class="img-responsive" alt="Responsive image">
-          <h1>Ruby on Rails</h1>
-            <div class="main-text">
-              <p>Beginners level in Ruby programming language and Rails framework, SQL queries and databases including MySQL, MVC, Active Record (Rails) and Rails App security. I have some knowledge of RSPEC, BDD and TDD and Automated testing using <br>Ruby Gems.<p>
+      <div class="col-md-2" id="ruby">
+        <!-- <div class="col-xs-10" id"ruby-img"> -->
+          <img src="img/other/ruby_icon.svg" class="img-responsive" alt="Responsive image">
+       <!--  </div> -->
+          <div class="main-text">
+              <h1>Ruby on Rails</h1>
+                <p>Beginners level in Ruby programming language and Rails framework, SQL queries and databases including MySQL, MVC, Active Record (Rails) and Rails App security. I have some knowledge of RSPEC, BDD and TDD and Automated testing using <br>Ruby Gems.<p>
           </div>
       </div>
      
 
-      <div class="col-xs-4 col-md-2" id="design">
-        <img src="img/other/design_icon.svg" class="img-responsive" alt="Responsive image">
-          <h1>Design</h1>
-            <div class="main-text">
-              <p>I was an Infographic artist in London’s Fleet Street for a number years before going freelance. I like to design, amongst other things, infographics, Illustrations, graphical assets and UI for<br> e-learning courses...and now building Websites.<p>
+      <div class="col-md-2" id="design">
+        <!-- <div class="col-xs-10" id"design-img"> -->
+          <img src="img/other/design_icon.svg" class="img-responsive" alt="Responsive image">
+      <!--   </div> -->
+          <div class="main-text">
+              <h1>Design</h1>
+                <p>I was an Infographic artist in London’s Fleet Street for a number years before going freelance. I like to design, amongst other things, infographics, Illustrations, graphical assets and UI for<br> e-learning courses...and now building Websites.<p>
             </div>
       </div>
 
-      <div class="col-xs-12 col-md-6" id="contact">
+      <div class="col-xs-10 col-md-6" id="contact">
         <hr>
           <h2 class="mail">
           <span class="glyphicon glyphicon-envelope"></span>
@@ -166,8 +176,8 @@
         </form>
           
         </div>
-      </div> <!-- end col-md-4 -->
-      </div> <!-- end row -->
+      <!-- </div>  --><!-- end col-md-4 -->
+      </div> <!-- end row about-contact-details-->
     </div> <!-- end about-contact container -->
  
     <!-- footer -->
@@ -177,6 +187,8 @@
           <p>&copy;Marc Jennings 2015</p>
         </div>
          <div class="footer-social pull-right">
+            <a href="https://github.com/marcjennings" target="_blank" title="github"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            
             <a href="https://uk.pinterest.com/marcjennings31" target="_blank" title="pinterest"><i class="fa fa-pinterest-square fa-3x"></i></a>
             
             <a href="https://twitter.com/Mrca_J" target="_blank" title="twitter"><i class="fa fa-twitter-square fa-3x"></i></a>
@@ -228,7 +240,7 @@
 
     <!-- Dynamic gallery swipebox -->
     <script type="text/javascript">
-      $( '#gallery' ).click( function( e ) {
+      /*$( '#gallery' ).click( function( e ) {
         e.preventDefault();
         $.swipebox( $.map(data, function (val, index) {
           return {
@@ -236,7 +248,7 @@
             href: val.image_link
           }
         }));
-      });
+      });*/
     </script> 
     <!-- end Dynamic gallery swipebox -->
 

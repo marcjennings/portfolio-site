@@ -3,25 +3,25 @@ var works = [
   /* infographics */
   /* first row */
     {
-        title: "Infographics: Solar power poster",
+        title: /* "Infographics:" */  "Solar power poster",
         pic: "img/info/solar-tmb.jpg",
         href: "img/info/solar-poster.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Nuclear power poster",
+        title: /* "Infographics:" */  "Nuclear power poster",
         pic: "img/info/nuclear-tmb.jpg",
         href: "img/info/nuclear-poster.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Wind power poster",
+        title: /* "Infographics:" */  "Wind power poster",
         pic: "img/info/wind-tmb.jpg",
         href: "img/info/wind-poster.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Fossil fuel poster",
+        title: /* "Infographics:" */  "Fossil fuel poster",
         pic: "img/info/fossil-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "infog"
@@ -31,25 +31,25 @@ var works = [
 
   /* second row */
     {
-        title: "Infographics: Powering society",
+        title: /* "Infographics:" */  "Powering society",
         pic: "img/info/powering-tmb.jpg",
         href: "img/info/powering.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Low carbon surfer",
+        title: /* "Infographics:" */  "Low carbon surfer",
         pic: "img/info/lcsurf-tmb.jpg",
         href: "img/info/lcsurf.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Lifecycle of a plastic bottle",
+        title: /* "Infographics:" */  "Lifecycle of a plastic bottle",
         pic: "img/info/plastics-tmb.jpg",
         href: "img/info/plastics.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Le Tour de France",
+        title: /* "Infographics:" */  "Le Tour de France",
         pic: "img/info/tour-tmb.jpg",
         href: "img/info/tour-de-france.jpg",
         type: "infog"
@@ -58,27 +58,28 @@ var works = [
 
   /* third row */
     {
-        title: "Infographics: Running",
+        title: /* "Infographics:" */  "Running",
         pic: "img/info/running-tmb.jpg",
         href: "img/info/running-poster.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: The Human Eye",
+        title: /* "Infographics:" */  "The Human Eye",
         pic: "img/info/eyes-tmb.jpg",
         href: "img/info/eyes-graphic.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Rail and Roads",
-        pic: "img/info/railsandroads-tmb.jpg",
-        href: "img/info/railandroads.jpg",
+        title: /* "Infographics:" */  "Rail and Roads",
+        pic: "img/info/railroads-tmb.jpg",
+        href: "img/info/railroads.jpg",
         type: "infog"
   },
     {
-        title: "Infographics: Rail and Roads Presentation",
-        pic: "img/info/infrabee-slides-tmb.jpg",
-        href: "img/info/infrabee-slide8.jpg",
+        title: /* "Infographics:" */ "Rail and Roads Presentation",
+        pic: "img/info/railroads-pres-tmb.jpg",
+        href: "img/info/railsroads-pres-7.jpg",
+        /* href: "img/info/railsroads-pres-8.jpg", */
         type: "infog"
   },
   /* ends third row */
@@ -87,42 +88,54 @@ var works = [
   /* e-learning */
   /* fourth row */
     {
-        title: "e-learning: Delivery methods and payments",
+        title: /* "e-learning: */ "Delivery methods and payments",
         pic: "img/elearn/htg-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "elearn"
   },
-    {
-        title: "e-learning: The XY management theory",
-        pic: "img/elearn/xy-tmb.jpg",
+      {
+        title: /* "e-learning: */ "Delivery methods and payments",
+        pic: "img/elearn/htg2-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "elearn"
   },
-   /* ends fourth row */
-   /* ends e-learning */
+    {
+        title: /* "e-learning: */ "The XY management theory",
+        pic: "img/elearn/x-theory-tmb.jpg",
+        href: "img/info/fossil-poster.jpg",
+        type: "elearn"
+  },
+      {
+        title: /* "e-learning: */ "The XY management theory",
+        pic: "img/elearn/y-theory-tmb.jpg",
+        href: "img/info/fossil-poster.jpg",
+        type: "elearn"
+  },
+  /* ends fourth row */
+  /* ends e-learning */
 
   /* illustration */
   /* fifth row */
     {
-        title: "Illustration: Walter White",
+        title: /* "Illustration:" */ "Walter",
         pic: "img/illus/walter-tmb.jpg",
         href: "img/illus/walter.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Nucky Thompson",
+        title: /* "Illustration:" */ "Nucky",
         pic: "img/illus/nucky-tmb.jpg",
         href: "img/illus/nucky.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Charles Bradley",
+        title: /* "Illustration:" */ "Charles",
         pic: "img/illus/bradley-tmb.jpg",
         href: "img/illus/bradley.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Sir Bradley Wiggins",
+        title: /* "Illustration:" */ "Wiggins",
         pic: "img/illus/wiggins-tmb.jpg",
         href: "img/illus/wiggins.jpg",
         type: "illu"
@@ -131,52 +144,52 @@ var works = [
 
   /* sixth row */
     {
-        title: "Illustration: St James' Park",
+        title: /* "Illustration:" */ "St James Park",
         pic: "img/illus/SJP1-tmb.jpg",
-        href: "img/info/SJP1.jpg",
+        href: "img/illus/SJP1.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: TF magazine",
+        title: /* "Illustration:" */ "TF magazine",
         pic: "img/illus/tf-ipad-tmb.jpg",
         href: "img/illus/tf-ipad.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: St James' Park",
+        title: /* "Illustration:" */ "St James Park",
         pic: "img/illus/SJP2-tmb.jpg",
         href: "img/illus/sjp2.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Hills",
-        pic: "img/illus/hills-tmb.jpg",
-        href: "img/illus/hills.jpg",
+        title: /* "Illustration:" */ "Library",
+        pic: "img/illus/library-tmb.jpg",
+        href: "img/illus/library.jpg",
         type: "illu"
   },
   /* ends sixth row */
 
   /* ends seventh row */
     {
-        title: "Illustration: Buildings",
-        pic: "img/illus/buildings-tmb.jpg",
-        href: "img/illus/buildings.jpg",
+        title: /* "Illustration:" */ "Hills",
+        pic: "img/illus/hills-tmb.jpg",
+        href: "img/illus/hills.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Giraffe",
+        title: /* "Illustration:" */ "Giraffe",
         pic: "img/illus/giraffe-tmb.jpg",
         href: "img/illus/giraffe.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Zebra",
+        title: /* "Illustration:" */ "Zebra",
         pic: "img/illus/zebra-tmb.jpg",
         href: "img/illus/zebra.jpg",
         type: "illu"
   },
     {
-        title: "Illustration: Worms",
+        title: /* "Illustration:" */ "Worms",
         pic: "img/illus/worms-tmb.jpg",
         href: "img/illus/worms.jpg",
         type: "illu"
@@ -187,26 +200,26 @@ var works = [
   /* web-dev */
   /* eighth row */
     {
-        title: "Web Development: The Reservoir Run Series",
+        title: /* "Web Development: */ "The Reservoir Run Series",
         pic: "img/dev/res-series-tmb.jpg",
+        href: "img/dev/res-run-imgs.jpg",
+        type: "web"
+  },
+    {
+        title: "Web Development: Coming Soon",
+        pic: "img/dev/blank1-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
-        pic: "img/dev/res-series-tmb.jpg",
+        pic: "img/dev/blank2-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
-        pic: "img/dev/res-series-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
-        type: "web"
-  },
-    {
-        title: "Web Development: Coming Soon",
-        pic: "img/dev/res-series-tmb.jpg",
+        pic: "img/dev/blank3-tmb.jpg",
         href: "img/info/fossil-poster.jpg",
         type: "web"
   }
