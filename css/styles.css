@@ -161,6 +161,33 @@ body {
   color: #1cbbe6;
 }
 
+.webdev-img {
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+.info {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: rgba(1, 1, 1, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.info p {
+  font-family: Arimo;
+  text-transform: uppercase;
+  font-size: 2.8vw;
+  font-weight: 700;
+  line-height: 0.9;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
+  color: #1cbbe6;
+}
+
 /*.proj-title {
   font-weight: 700;
 }*/

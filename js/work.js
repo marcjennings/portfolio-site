@@ -78,7 +78,7 @@ var works = [
     {
         title: /* "Infographics:" */ "Rail and Roads Presentation",
         pic: "img/info/railroads-pres-tmb.jpg",
-        href: "img/info/railsroads-pres-7.jpg",
+        href: "img/info/rr-pres.jpg",
         /* href: "img/info/railsroads-pres-8.jpg", */
         type: "infog"
   },
@@ -89,26 +89,14 @@ var works = [
   /* fourth row */
     {
         title: /* "e-learning: */ "Delivery methods and payments",
-        pic: "img/elearn/htg-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
-        type: "elearn"
-  },
-      {
-        title: /* "e-learning: */ "Delivery methods and payments",
-        pic: "img/elearn/htg2-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
+        pic: "img/elearn/delivery-tmb.jpg",
+        href: "img/elearn/delivery.jpg",
         type: "elearn"
   },
     {
         title: /* "e-learning: */ "The XY management theory",
         pic: "img/elearn/x-theory-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
-        type: "elearn"
-  },
-      {
-        title: /* "e-learning: */ "The XY management theory",
-        pic: "img/elearn/y-theory-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
+        href: "img/elearn/xy-theory.jpg",
         type: "elearn"
   },
   /* ends fourth row */
@@ -202,25 +190,25 @@ var works = [
     {
         title: /* "Web Development: */ "The Reservoir Run Series",
         pic: "img/dev/res-series-tmb.jpg",
-        href: "img/dev/res-run-imgs.jpg",
+        href: "https://bokajrailsdemo.herokuapp.com/",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank1-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
+        //href: "#web-dev",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank2-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
+        //href: "#web-dev",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank3-tmb.jpg",
-        href: "img/info/fossil-poster.jpg",
+        //href: "#web-dev",
         type: "web"
   }
   ];
@@ -248,7 +236,7 @@ for (var i = 0; i < works.length; ++i) {
     case "illu":
         illus.push(works[i]);
         break;
-    case "web":
+    case "web":   
         webdev.push(works[i]);
         break;
     default:

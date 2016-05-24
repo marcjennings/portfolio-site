@@ -46,7 +46,7 @@ $(document).ready( function(){
     for (var i = 0; i < _arr.length; ++i) {
       $("#" + idTarg).append("\
         <div class='col-xs-6 col-sm-4 col-md-3'>\
-          <a href='" + _arr[i].href + "' class='work-img swipebox' title='" + _arr[i].title + "'>\
+          <a href='" + _arr[i].href + "' class='work-img swipebox' title= '" + _arr[i].title + "'>\
             <img class='img-responsive' src='" + _arr[i].pic + "'>\
             <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
           <a/>\
@@ -57,17 +57,62 @@ $(document).ready( function(){
   addWork(infogs, 'infogs');
   addWork(e_learn, 'e_learn');
   addWork(illus, 'illus');
-  addWork(webdev,'webdev');
+  /* addWork(webdev,''); */
   /* end new work images */
-  
 
-/* image title hover effect */
+  /* new work images */
+  function addWorkDev(_arr, idTarg) {
+    for (var i = 0; i < _arr.length; ++i) {
+      $("#" + idTarg).append("\
+        <div class='col-xs-6 col-sm-4 col-md-3' id='web-img'>\
+          <a href='' class='work-img'>\
+            <img class='img-responsive' src= '" + _arr[i].pic + "' href= '" + _arr[i].href + "'>\
+            <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
+          <a/>\
+        </div>\
+      ");
+    }
+  }
+  addWorkDev(webdev,'webdev');
+  /* end new work images */
+
+  /* image title hover effect */
   $(".work-img").mouseenter(function(){
     $(".info", this).show();
   }).mouseleave(function(){
     $(".info", this).hide();
   });
   /* end image title hover effect */
+
+  // onclick //
+  $("#webdev").click(function(e){
+    event.preventDefault();
+    window.open("https://bokajrailsdemo.herokuapp.com/"); //This works for First link only
+    //window.open = $(this).attr('link');
+  });
+
+  /* window.location = this.id + '.link';
+  /* $(".webdev").click(function(){
+    $("#web-img").attr({
+      "href" : "https://bokajrailsdemo.herokuapp.com/"
+    });
+  }); */
+  
+  /*function imageClick(url) {
+    window.location = url;
+  } */
+
+  /* $("web-img").click(function() {
+    window.location.href = this.id + '.link';
+  }); */
+ 
+  // WORKS WITH IMAGES ADDED TO INDEX.HTML //
+  // $("link").on('click', function(){
+  //   window.location = "https://bokajrailsdemo.herokuapp.com/";
+  // });
+  // ends onclick //
+
+
 
 
   /* table */
