@@ -196,19 +196,19 @@ var works = [
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank1-tmb.jpg",
-        //href: "#web-dev",
+        href: "null",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank2-tmb.jpg",
-        //href: "#web-dev",
+        href: "null",
         type: "web"
   },
     {
         title: "Web Development: Coming Soon",
         pic: "img/dev/blank3-tmb.jpg",
-        //href: "#web-dev",
+        href: "null",
         type: "web"
   }
   ];

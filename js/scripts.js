@@ -7,9 +7,9 @@ $(document).ready( function(){
     });
   /* end navbar menu collapse */
   
-  /* text background color switched off */
-  /* $(".main-text p").css("background-color", "#1cbbe6"); */ 
-   /* end text background color switched off */
+  /* text background color switched off 
+    $(".main-text p").css("background-color", "#1cbbe6"); 
+  end text background color switched off */
   
   /* submit button */
   $("#button-submit").on("click",function(){
@@ -63,14 +63,26 @@ $(document).ready( function(){
   /* new work images */
   function addWorkDev(_arr, idTarg) {
     for (var i = 0; i < _arr.length; ++i) {
-      $("#" + idTarg).append("\
-        <div class='col-xs-6 col-sm-4 col-md-3' id='web-img'>\
-          <a href='' class='work-img'>\
-            <img class='img-responsive' src= '" + _arr[i].pic + "' href= '" + _arr[i].href + "'>\
-            <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
-          <a/>\
-        </div>\
-      ");
+      if ( _arr[i].href != "null") {
+        $("#" + idTarg).append("\
+          <div class='col-xs-6 col-sm-4 col-md-3' id='web-img'>\
+            <a href= '" + _arr[i].href + "' target='_blank' class='work-img'>\
+              <img class='img-responsive' src= '" + _arr[i].pic + "'>\
+              <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
+            <a/>\
+          </div>\
+        ");
+      }
+      else {
+         $("#" + idTarg).append("\
+          <div class='col-xs-6 col-sm-4 col-md-3' id='web-img'>\
+            <div class='work-img'>\
+              <img class='img-responsive' src= '" + _arr[i].pic + "'>\
+              <span class='info'><p class='proj-title'> " + _arr[i].title + " </p> </span>\
+            <div/>\
+          </div>\
+        ");
+       }
     }
   }
   addWorkDev(webdev,'webdev');
@@ -83,37 +95,6 @@ $(document).ready( function(){
     $(".info", this).hide();
   });
   /* end image title hover effect */
-
-  // onclick //
-  $("#webdev").click(function(e){
-    event.preventDefault();
-    window.open("https://bokajrailsdemo.herokuapp.com/"); //This works for First link only
-    //window.open = $(this).attr('link');
-  });
-
-  /* window.location = this.id + '.link';
-  /* $(".webdev").click(function(){
-    $("#web-img").attr({
-      "href" : "https://bokajrailsdemo.herokuapp.com/"
-    });
-  }); */
-  
-  /*function imageClick(url) {
-    window.location = url;
-  } */
-
-  /* $("web-img").click(function() {
-    window.location.href = this.id + '.link';
-  }); */
- 
-  // WORKS WITH IMAGES ADDED TO INDEX.HTML //
-  // $("link").on('click', function(){
-  //   window.location = "https://bokajrailsdemo.herokuapp.com/";
-  // });
-  // ends onclick //
-
-
-
 
   /* table */
   var rows = $(".my-row");
