@@ -27,8 +27,7 @@ $(document).ready( function(){
 
     var comment = $(this).val();
     var numOfChars = comment.length;
-
-        var $character_counter = $("#character-counter");
+    var $character_counter = $("#character-counter");
 
     $character_counter.html(numOfChars);
 
