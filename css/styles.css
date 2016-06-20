@@ -180,6 +180,8 @@ body {
   background-color: #5eceed;
   background-attachment: fixed;
   padding-top: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
   height: 100vh;
 }
 
@@ -249,147 +251,6 @@ a[href^="mailto"]:hover {
 }
 /*end About & Contact */
 
-/* Form */
-.form-control::-webkit-input-placeholder {
-  color: #1cbbe6;
-}
-
-/* removes yellow autofill in Chrome  */
-/*input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 100px white inset;
-  -moz-box-shadow: 0 0 0 100px white inset;
-  box-shadow: 0 0 0 100px white inset;
-}
- /* ends removes yellow autofill in Chrome ---------- */
-
-
-/*.form-control {
-  border-style: none;
-  border-radius: 0;
-}
-
-.btn.btn-submit {
-  background-color: white;
-  border-style: none;
-  border-radius: 0;
-  color: #1cbbe6;
-}
-
-.btn.btn-submit:active {
-  background-color: black;
-  color: white;
-  outline-style: none;
-}
-
-.btn.btn-submit:focus {
-  outline: none;
-}
-
-#character-counter {
-  color: white;
-}
-
-
-/*end Form */
-
-/* map */
-/*#map-canvas {
-  height: 100%;
-}
-/* end map */
-
-/* FAQ panel */
-/*/.glyphicon-plus-sign {
-  color: black;
-}
-
-.panel-title {
-  color: white;
-  font-weight: 600;
-}
-
-.panel-heading {
-  padding: 10px;
-  color: #708f9c;
-  border-color: 0;
-}
-
-.panel-title a:hover {
-  color: black;
-  text-decoration: none;
-  transition: color 300ms;
-  -webkit-transition: color 300ms;
-}
-
-.panel-title a:focus {
-  text-decoration: none;
-}
-
-.panel-body {
-  color: white;
-  background-color: black;
-  border-color: 0;
-  border-top: 0;
-}
-
-.panel-default >.panel-heading {
-  background-color: #1cbbe6;
-  border-color: #dddddd;
-}
-
-.panel-default {
-  border: none;
-}
-
-.panel-group .panel-heading + .panel-collapse> .panel-body {
-    border: none;
-} */
-/* end FAQ panel */
-
-/* Learn More & Modal button */
-/*.learn-more {
-  text-align: left;
-  float: left;
-  color: #1cbbe6;
-  margin-left: 25px;
-}
-
-.modal-button {
-  float: right;
-  padding-top: 25px;
-  margin-right: 15px;
-} */
-/* end Learn More & Modal button */
-
-/* Modal frame */
-/* .modal-body {
-  height: 580px;
-  background-color: #1cbbe6;
-}
-
-.modal-content {
-  width: 430px;
-  margin: 0 auto;
-}
-
-.modal-title {
-  color: #1cbbe6;
-}
-
-#modalframe {
-  padding: 20px;
-  height: 100%;
-  width: 100%;
-}
-/* end Modal frame */
-
-/* Carousel */
-/*.mycarousel {
-  margin-bottom: 05px;
-} */
-
-/* end Carousel */
-
 /* thumbnails */
 .info-tmb .col-xs-12, .col-sm-6, .col-md-3 {
   padding: 3px;
@@ -401,57 +262,6 @@ a[href^="mailto"]:hover {
   height: auto;
 }
 /* end thumbnails */
-
-
-/*#code.img-responsive {
-  display: block;
-  max-width: 60%;
-  height: auto;
-}*/
-
-/* Table 
-table {
-  width: 98%;
-  margin: 0 auto;
-  background-color: #1cbbe6;
-}
-
-.table, th, td {
-  border: 2px solid white;
-  padding: 10px;
-  margin: 15px;
-  color: white;
-}
-
-.table, th {
-  font-weight: 500;
-  font-size: 1.5em;
-}
-/* end Table */
-
-/* Portfolio Project Course goals 
-.row {
-  color: black;
-  margin-bottom: 20px;
-}
-
-.item1 { 
-  color: #1cbbe6;
-}
-/* end Portfolio Project Course goals */
-
-/* video 
-.wrapper {
-  margin: 0 auto;
-  width: 560px;
-  border: 0;
-  padding: 0px;
-}
-
-.vidwrap {
-  margin: 0 auto;
-}
-/* end video */
 
 /* footer */
 .footer {
@@ -489,6 +299,11 @@ table {
 
 .fa-twitter-square {
   color: white;
+}
+
+.fa-soundcloud {
+  color: white;
+  font-size: 40px;
 }
 /* end footer */
 

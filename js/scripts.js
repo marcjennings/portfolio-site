@@ -7,10 +7,6 @@ $(document).ready( function(){
     });
   /* end navbar menu collapse */
   
-  /* text background color switched off 
-    $(".main-text p").css("background-color", "#1cbbe6"); 
-  end text background color switched off */
-  
   /* submit button */
   $("#button-submit").on("click",function(){
     console.log("clicked");
