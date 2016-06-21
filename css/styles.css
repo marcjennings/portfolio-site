@@ -54,6 +54,7 @@ body {
 
 .nav.navbar-nav li a {
   color: #fff;
+  font-size: 0.9em;
   font-weight: 400;
 }
 
@@ -303,7 +304,7 @@ a[href^="mailto"]:hover {
 
 .fa-soundcloud {
   color: white;
-  font-size: 40px;
+  /* font-size: 40px; */
 }
 /* end footer */
 
@@ -316,10 +317,17 @@ a[href^="mailto"]:hover {
 /* ends swipebox */
 
 @media (max-width: 768px) {
+
   #about-contact {
     height: 100%;
     padding-top: 40px;
     padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #contact {
+    margin-bottom: 0px;
   }
   
   #icon-img {
@@ -336,10 +344,25 @@ a[href^="mailto"]:hover {
   }
 
   .main-text p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: .2px;
     line-height: 1.2;
     padding-bottom: 5px;
+  }
+
+  h2.mail {
+    font-size: 1.4em;
+  }
+
+  .social.pull-right {
+    float: left!important;
+  }
+
+  .fa {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 05px;
+    font-size: 3em;
   }
 
   .footer {
